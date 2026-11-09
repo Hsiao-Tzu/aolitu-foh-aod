@@ -99,16 +99,16 @@ li:first-child { border-top: 0; }
 
 <script>
 const ROWS = [
-  ["03", "愚人之旅", "https://go.one.blendvision.com/pELkFl/xVIGPkLx"],
-  ["05", "未來的答案", "https://go.one.blendvision.com/pELkFl/Jd3Q7tw2"],
-  ["07", "再見威爾遜", "https://go.one.blendvision.com/pELkFl/1xFbI388"],
-  ["09", "只有風知道", "https://go.one.blendvision.com/pELkFl/fT0gUS3A"],
-  ["11", "超現實偽裝", "https://go.one.blendvision.com/pELkFl/nXfCNLiL"],
-  ["13", "過去的答案", "https://go.one.blendvision.com/pELkFl/MV5GJmvE"],
-  ["15", "霓虹花園", "https://go.one.blendvision.com/pELkFl/9FgElPV2"],
-  ["17", "提坎庫如克", "https://go.one.blendvision.com/pELkFl/oXD8g705"],
-  ["19", "但我愛你", "https://go.one.blendvision.com/pELkFl/EiUsfDoC"],
-  ["20", "無人的海邊", "https://go.one.blendvision.com/pELkFl/vPudwcGT"]
+  ["01", "愚人之旅", "https://go.one.blendvision.com/pELkFl/xVIGPkLx"],
+  ["02", "未來的答案", "https://go.one.blendvision.com/pELkFl/Jd3Q7tw2"],
+  ["03", "再見威爾遜", "https://go.one.blendvision.com/pELkFl/1xFbI388"],
+  ["04", "只有風知道", "https://go.one.blendvision.com/pELkFl/fT0gUS3A"],
+  ["05", "超現實偽裝", "https://go.one.blendvision.com/pELkFl/nXfCNLiL"],
+  ["06", "過去的答案", "https://go.one.blendvision.com/pELkFl/MV5GJmvE"],
+  ["07", "霓虹花園", "https://go.one.blendvision.com/pELkFl/9FgElPV2"],
+  ["08", "提坎庫如克", "https://go.one.blendvision.com/pELkFl/oXD8g705"],
+  ["09", "但我愛你", "https://go.one.blendvision.com/pELkFl/EiUsfDoC"],
+  ["10", "無人的海邊", "https://go.one.blendvision.com/pELkFl/vPudwcGT"]
 ];
 
 const list = document.getElementById("list");
@@ -135,7 +135,7 @@ function copyText(text, btn, label) {
 ROWS.forEach(([cue, song, url]) => {
   const li = document.createElement("li");
   li.innerHTML =
-    '<span class="cue">cm-' + cue + '</span>' +
+    '<span class="cue">' + cue + '</span>' +
     '<span class="song"><b></b><a target="_blank" rel="noopener"></a></span>' +
     '<button type="button">複製</button>';
   li.querySelector("b").textContent = song;
