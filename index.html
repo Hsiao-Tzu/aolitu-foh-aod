@@ -80,6 +80,20 @@ li:first-child { border-top: 0; }
   li { grid-template-columns: 2.6em minmax(0, 1fr); }
   li button { grid-column: 2; justify-self: start; }
 }
+.notice {
+  border: 1px solid var(--line); border-left: 4px solid var(--accent);
+  background: var(--surface); border-radius: 10px;
+  padding: 12px 14px; margin-bottom: 20px;
+  font-size: 13.5px; line-height: 1.55;
+}
+.notice .warn { display: block; font-weight: 700; color: var(--accent); font-size: 14.5px; margin-bottom: 5px; }
+.notice p { margin: 0; color: var(--fg); }
+.notice details { margin-top: 9px; }
+.notice summary { cursor: pointer; color: var(--muted); font-size: 12.5px; font-weight: 500; }
+.notice summary:hover { color: var(--accent); }
+.notice details > div { margin-top: 8px; color: var(--muted); }
+.notice ul { margin: 0; padding-left: 1.15em; }
+.notice ul li { display: list-item; grid-template-columns: none; align-items: initial; gap: 0; padding: 3px 0; border: 0; }
 </style>
 </head>
 <body>
@@ -88,6 +102,21 @@ li:first-child { border-top: 0; }
     <h1>北京奧利兔音樂節</h1>
     <span class="meta">2026-09-12 演出 FOH 錄音</span>
   </header>
+
+  <div class="notice">
+    <span class="warn">⚠️ 僅供試聽，不能作為正式工作用途</span>
+    <p>此為 320&nbsp;kbps 有損串流試聽版，非無損母帶。版權所有，僅授權指定對象本人聆聽，請勿轉傳、側錄或散布；連結可追溯並隨時撤銷。</p>
+    <details>
+      <summary>技術說明：為什麼不能當正式檔</summary>
+      <div>
+        <ul>
+          <li>格式為 320&nbsp;kbps AAC 有損壓縮，不是 WAV／母帶——高頻與動態已被壓縮演算法改變，量測與精修會失真。</li>
+          <li>以 DRM 保護串流播放、無檔案下載；任何側錄取得的音訊都是「解碼後再錄」的有損二手拷貝，品質更差。</li>
+          <li>平台僅保留此試聽版，母帶不在線上。混音母帶、實體壓片、廣播播出、商業授權等正式交付，一律另向我們索取正式檔，不得使用此連結的音訊。</li>
+        </ul>
+      </div>
+    </details>
+  </div>
 
   <div class="bar">
     <span class="count" id="count"></span>
